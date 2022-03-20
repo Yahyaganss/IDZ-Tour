@@ -269,7 +269,7 @@
         <div class="card-body">
           <p class="card-text">
             Some quick example text to build on the card title and make up the
-            bulk of the card's content.ss
+            bulk of the card's content.
           </p>
           <p class="date">Kamis, 03 Maret 2022</p>
         </div>
