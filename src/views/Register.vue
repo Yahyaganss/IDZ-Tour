@@ -1,6 +1,6 @@
 <template>
   <div id="Register">
-    <div class="login-card">
+    <div class="register-card">
       <div class="row justify-content-center">
         <h2 style="color: blue; font-weight: bolder; text-shadow: 5px 5px 5px grey">IDZ</h2>
         <h2 style="color: red; font-weight: bolder; text-shadow: 5px 5px 5px grey">NEWS</h2>

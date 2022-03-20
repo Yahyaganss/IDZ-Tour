@@ -1,371 +1,1943 @@
-@media (min-width: 992px) { 
-    #Header .languange {
-        position: absolute;
-        height: 50px;
-        width: 100px;
-        background-color: orange;
-        overflow: hidden;
-        top: 5px;
-        border-radius: 10px;
-        box-shadow: 1px 1px 9px -6px #444444;
-    }
-
-    #Header .languange input[type="radio"] {
-        display: none;
-    }
-
-    #Header .languange .ID {
-        display: block;
-        height: 100px;
-        width: 50px;
-        background: linear-gradient(
-            to bottom,
-            white 0, white 50px,
-            blue 50px, blue 100px
-        );
-        position: absolute;
-        top: 0;
-        color: black;
-    }
-
-    #Header .languange .EN {
-        display: block;
-        height: 100px;
-        width: 50px;
-        background: linear-gradient(
-            to top,
-            blue 0, blue 50px,
-            white 50px, white 100px
-        );
-        position: absolute;
-        top: 0;
-        color: black;
-    }
-
-    #Header .languange .EN {
-        left: 50px;
-    }
-
-    #Header .languange span{
-        display: flex;
-        height: 50px;
-        width: 50px;
-        justify-content: center;
-        align-items: center;
-        font-weight: bolder;
-        font-size: 22px;
-    }
-
-    #Header .languange input:checked + label {
-        background-position: 0 -50px;
-        color: black;
-        transition: 0.7s;
-    }
-
-    #Header .search input[type=search] {
-        width: 350px;
-        box-sizing: border-box;
-        border-radius: 20px;
-    }
-
-    #Register .login-card {
-        width: 500px;
+@media screen and (min-width: 992px) {
+    body {
         background-color: white;
-        color: black;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        padding: 20px;
-        transform: translate(-50%, -50%);
-        box-sizing: border-box;
-        border-radius: 15px;
-        box-shadow: 0.5px 0.5px 10px 1px rgb(231, 221, 221);
-    }
+        font-family: 'Poppins', sans-serif;
+        width: 100%;
+        }
+    
+        a {
+            text-decoration: none;
+        }
+    
+        .carousel-control-prev, .carousel-control-next {
+            z-index: 2;
+        }
+    
+        #Header .navbar {
+            width: 100%;
+    
+        }
+    
+        #Header .search input[type=search] {
+            width: 350px;
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+    
+        #Header header {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        transition: background-color .3s ease;
+        z-index: 4;
+        background-color: #B4431D;
+        }
+    
+        #Header .nav-1 {
+            z-index: 2;
+        }
+    
+        #Header .nav-1 .languange-menu .inggris {
+            border-radius: 10px;
+        }
+    
+        #Header .languange-menu {
+            z-index: 10;
+        }
+    
+        #Header .nav-3 {
+            box-shadow: 0 0.5px 0.1px rgb(189, 179, 179);
+            z-index: 3;
+        }
+    
+        #Header .nav-2 {
+            z-index: 3;
+            
+        }
+    
+        * {
+            z-index: 2;
+        }
+    
+        #Register .register-card {
+            width: 500px;
+            background-color: white;
+            color: black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            padding: 20px;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            border-radius: 15px;
+            box-shadow: 0.5px 0.5px 10px 1px rgb(231, 221, 221);
+        }
+    
+        #Register .register-card .row .form-control {
+            width: 45%;
+            margin-left: 15px;
+        }
+    
+        #Register p {
+            font-size: 13px;
+        }
+    
+        #Login .login-card {
+            width: 500px;
+            background-color: white;
+            color: black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            padding: 20px;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            border-radius: 15px;
+            box-shadow: 0.5px 0.5px 10px 1px rgb(231, 221, 221);
+        }
+    
+        #Login .login-card .row .form-control {
+            width: 45%;
+            margin-left: 15px;
+        }
+    
+        #Login p {
+            font-size: 13px;
+        }
+    
+        .under-header {
+            margin-top: 150px;
+            margin-left: 10px;
+        }
+    
+        .breadcrumb {
+            background-color: white;
+        }
+    
+        #Report .box-report {
+            width: 106%;
+            background-color: #E5E5E5;
+            padding: 15px;
+            margin: 0 0 0 10px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px 1px rgb(228, 218, 218);
+        }
+    
+        #Report .box-report input[type=file] {
+            padding: 0;
+            width: 90%;
+            height: 33px;
+        }
+    
+        #Report .box-report .file-lapor {
+            cursor: pointer;
+        }
+    
+        #Report .box-report button[type=submit] {
+            width: 10%;
+        }
+    
+        #SideNews .update-news {
+            position: relative;
+            width: 100%;
+            overflow-y: scroll;
+            height: 630px;
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0.5px 0.5px 10px 1px rgb(231, 221, 221);
+        }
+    
+        #SideNews .update-news .card-update-news a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+    
+        #SideNews .update-news .card-update-news a:hover {
+            text-decoration: none;
+            color: rgb(109, 109, 103);
+        }
+    
+        #SideNews .popular-news {
+            width: 100%;
+            background-color: white;
+            margin-bottom: 20px;
+            height: 520px;
+            padding: 15px;
+            overflow-y: scroll;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0.5px 0.5px 10px 1px rgb(231, 221, 221);
+        }
+    
+        #SideNews .popular-news .card-popular-news a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+    
+        #SideNews .popular-news .card-popular-news a:hover {
+            text-decoration: none;
+            color: rgb(109, 109, 103);
+        }
+    
+        #CoronaVaksinHalf .corona-vaksin {
+            margin-top: 30px;
+            margin-left: -5px;
+            width: 100%;
+        }
+    
+        #CoronaVaksinHalf .scroll {
+            overflow-y: scroll;
+        }
+    
+        #CoronaVaksinHalf .update-covid-public {
+            width: 100%;
+            background-color: white;
+            margin-top: 20px;
+            padding: 15px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0.5px 0.5px 10px 1px rgb(231, 221, 221);
+        }
+    
+        #CoronaVaksinHalf .update-covid-public .terkonfirmasi {
+            width: 24%;
+            background-color: #484848;
+            margin-left: 15px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    
+        #CoronaVaksinHalf .update-covid-public .suspek {
+            width: 24%;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            background-color: #FFA800;
+        }
+    
+        #CoronaVaksinHalf .update-covid-public .meninggal {
+            width: 24%;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            background-color: #FF0000;
+        }
+    
+        #CoronaVaksinHalf .update-covid-public .sembuh {
+            width: 24%;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            background-color: #00FF0A;
+        }
+    
+        #CoronaVaksinHalf .update-vaksin-public {
+            background-color: white;
+            margin-top: 20px;
+            margin-left: 15px;
+            width: 116%;
+            padding: 15px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0.5px 0.5px 10px 1px rgb(231, 221, 221);
+        }
+    
+        #CoronaVaksinHalf .update-vaksin-public .dosis-1 {
+            width: 31%;
+            background-color: #484848;
+            margin-left: 15px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    
+        #CoronaVaksinHalf .update-vaksin-public .dosis-2 {
+            width: 31%;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            background-color: #FFA800;
+        }
+    
+        #CoronaVaksinHalf .update-vaksin-public .dosis-3 {
+            width: 31%;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            background-color: #FF0000;
+        }
+    
+        #CoronaVaksinFull .corona-vaksin {
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+    
+        #CoronaVaksinFull .update-covid-public {
+            width: 50%;
+            background-color: white;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            padding: 15px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0.5px 0.5px 10px 1px rgb(231, 221, 221);
+        }
+    
+        #CoronaVaksinFull .update-covid-public .terkonfirmasi {
+            width: 24%;
+            background-color: #484848;
+            margin-left: 15px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    
+        #CoronaVaksinFull .update-covid-public .suspek {
+            width: 24%;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            background-color: #FFA800;
+        }
+    
+        #CoronaVaksinFull .update-covid-public .meninggal {
+            width: 24%;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            background-color: #FF0000;
+        }
+    
+        #CoronaVaksinFull .update-covid-public .sembuh {
+            width: 24%;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            background-color: #00FF0A;
+        }
+    
+        #CoronaVaksinFull .update-vaksin-public {
+            background-color: white;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            width: 45%;
+            padding: 15px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0.5px 0.5px 10px 1px rgb(231, 221, 221);
+        }
+    
+        #CoronaVaksinFull .update-vaksin-public .dosis-1 {
+            width: 32%;
+            background-color: #484848;
+            margin-left: 15px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    
+        #CoronaVaksinFull .update-vaksin-public .dosis-2 {
+            width: 32%;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            background-color: #FFA800;
+        }
+    
+        #CoronaVaksinFull .update-vaksin-public .dosis-3 {
+            width: 32%;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            background-color: #FF0000;
+        }
+    
+        .footer {
+            width: 100%;
+            height: 200px;
+            background-color: #B4431D;
+            position: absolute;
+            margin-top: 100px;
+        }
+    
+        .footer .img {
+            width: 100px;
+        }
+    
+        .footer .footer-left , .footer-right {
+            text-align: start;
+            margin-top: 60px;
+            left: 40px;
+        }
+    
+        .footer .line {
+            width: 1px;
+            height: 170px;
+            border-left: 1px black solid;
+            margin-top: 15px;
+        }
+    
+        #LandingPage header {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        transition: background-color 0.2s ease;
+        z-index: 3;
+        }
+    
+        #LandingPage .nav-1 {
+            z-index: 2;
+        }
+    
+        #LandingPage .nav-1 .languange-menu .inggris {
+            border-radius: 10px;
+        }
+    
+        #LandingPage .navbar {
+            width: 100%;
+        }
 
-    #Register .login-card .row .form-control {
-        width: 45%;
-        margin-left: 15px;
-    }
+        #LandingPage .nav-2 img {
+            width: 20rem;
+            height: auto;
+        }
+    
+        #LandingPage .search input[type=search] {
+            width: 350px;
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+    
+        #LandingPage .breadcrumb {
+            background-color: white;
+            margin-top: 20px;
+        }
+    
+        #LandingPage .carousel .banner {
+            width: 100%;
+            height: 70%;
+            border-radius: 20px;
+        }
+    
+        #LandingPage .slider {
+            width: 95%;
+            top: 30px;
+        }
+    
+        #LandingPage .row-card {
+            margin-top: 10px;
+        }
+    
+        #LandingPage .card {
+            box-sizing: border-box;
+            border-radius: 10px;
+            left: 50px;
+            width: 258px;
+            height: 100%;
+            margin-right: 20px;
+            box-shadow: 0.5px 0.5px 7px 1px rgb(189, 189, 189);
+        }
+    
+        #LandingPage .card .card-body {
+            padding: 10px 10px 0 10px;
+        }
+    
+        #LandingPage .card img {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+    
+        #LandingPage .card .date {
+            font-size: 13px;
+            font-weight: bolder;
+            text-align: end;
+            margin-top: 50px;
+        }
+    
+        #LandingPage .galery {
+            width: 100%;
+            height: 670px;
+            /* background-color: blue; */
+            margin-top: 40px;
+            padding: 25px;
+            padding-left: 70px;
+        }
+    
+        #LandingPage .galery .left img {
+            height: 300px;
+            width: 600px;
+        }
+    
+        #LandingPage .galery .left .desc-image {
+            width: 80%;
+            height: 200px;
+            margin-top: -80px;
+            position: absolute;
+            left: 10%;
+            border-radius: 20px;
+            background-color: #C4C4C4;
+            padding: 15px;
+            opacity: 70%;
+        }
+    
+        #LandingPage .galery .left .desc-image:hover {
+            width: 80%;
+            height: 200px;
+            margin-top: -110px;
+            transition: 500ms;
+            position: absolute;
+            left: 10%;
+            border-radius: 20px;
+            background-color: #888282;
+            padding: 15px;
+            opacity: 70%;
+        }
+    
+        #LandingPage .left .carousel-control-prev {
+            height: 50px;
+            border: 0;
+            top: 20%;
+            background-color: transparent;
+        }
+    
+        #LandingPage .left .carousel-control-next {
+            height: 50px;
+            border: 0;
+            top: 20%;
+            background-color: transparent;
+        }
+    
+        #LandingPage .left .carousel-indicators img {
+            width: 130px;
+            height: 80px;
+            position: absolute;
+            left: 0;
+            top: -250px;
+            cursor: pointer;
+        }
+    
+        #LandingPage .left .carousel-indicators img:hover {
+            width: 135px;
+            height: 85px;
+            transition: 500ms;
+            position: absolute;
+            left: -2px;
+            top: -252px;
+            cursor: pointer;
+        }
+    
+        #LandingPage .left .card-up {
+            height: 700px;
+        }
+    
+        #LandingPage .right {
+            left: 50px;
+        }
+    
+        #LandingPage .right img {
+            width: 400px;
+            height: 350px;
+            object-fit: cover;
+        }
+    
+        #LandingPage .right .desc-pedulilingkungan {
+            width: 350px;
+            height: 200px;
+            background-color: rgb(148, 126, 126);
+            position: absolute;
+            top: 275px;
+            left: 250px;
+            color: black;
+            opacity: 70%;
+            padding: 15px;
+        }
+    
+        #LandingPage .right .desc-pedulilingkungan:hover {
+            width: 350px;
+            height: 200px;
+            background-color: black;
+            position: absolute;
+            top: 255px;
+            left: 230px;
+            transition: 500ms;
+            color: white;
+            padding: 15px;
+            opacity: 70%;
+        }
+    
+        #HeroSection {
+            width: 100%;
+            height: 670px;
+            z-index: 1;
+            background: linear-gradient(100.07deg, #F80000 0.41%, rgba(0, 0, 0, 0.0854168) 72.34%, rgba(240, 35, 35, 0.47) 97.26%);
+        }
 
-    #Register p {
-        font-size: 13px;
-    }
+        #HeroSection .text-hero-section {
+            top: 10rem;
+            left: 3rem;
+        }
 
-    #Login .login-card {
-        width: 500px;
-        background-color: white;
-        color: black;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        padding: 20px;
-        transform: translate(-50%, -50%);
-        box-sizing: border-box;
-        border-radius: 15px;
-        box-shadow: 0.5px 0.5px 10px 1px rgb(231, 221, 221);
-    }
-
-    #Login .login-card .row .form-control {
-        width: 45%;
-        margin-left: 15px;
-    }
-
-    #Login p {
-        font-size: 13px;
-    }
-
-
-
-
-
-
-
-
-
-
-    /* OLD */
-    #Header .fa-shopping-bag {
-        color: orange;
-    }
+        #HeroSection img {
+            position: absolute;
+            right: 0;
+            width: 60%;
+            height: 60%;
+            top: 353px;
+        }
     
-    #Banner .Banner-Text {
-        /* margin-left: 20%; */
-        margin-top: 10%;
-    }
-    /* Bisa memakai (ml-1) untuk menggeser tulisan atau margin */
-    
-    #Banner .Banner-Text h6 {
-        font-size: 25px;
-        font-weight: 200;
-        color: #ec982e;
-    }
-    
-    .Banner-Text h1{
-        font-size: 35px;
-        font-weight: bold;
-    }
-    
-    .Banner-Text h1 span{
-        font-size: 35px;
-        font-weight: lighter;
-    }
-    
-    #Banner .Banner-Text .btn-success,
-    #Banner .Banner-Text .btn-light{
-        border-radius: 50px;
-    }
-    
-    #Banner .Banner-Text h1{
-        font-size: 35px;
-        font-weight: bolder;
-    }
-    
-    #Banner .Banner-Text span{
-        font-size: 35px;
-        font-weight: 100px;
-    }
-    
-    /* Carosel */
-    #Banner .d-flex img{
-        width: 540px;
-        height: auto;
-    }
-    #Carousel .fa-arrow-circle-left,
-            .fa-arrow-circle-right{
-        font-size: 48px;
-        color: #EC982E;
-    }
-    
-    #Carousel .carousel-indicators li{
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-    }
-
-    /* #Carousel .container .carousel slide{
-        margin-top: 4px;
-    } */
-
-  
+         .scrolling-active {
+            background-color: #E5E5E5;
+            background-image: url(../src/assets/icons/batik.png);
+            box-shadow: 0 0.5px 0.1px rgb(189, 179, 179);
+            top: 0;
+            transition: top 0.5s;
+        }
     
     
-    #Carousel .carousel-control-prev{
-        justify-content: start;
-        margin-left: -2%;
-    }
+        #ForgetPassword .ForgetPassword-card {
+            width: 500px;
+            background-color: rgba(0, 0, 0, 0.67);;
+            color: black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            padding: 50px;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            box-shadow: 0.5px 0.5px 2px 7px rgba(0, 0, 0, 0.25);;
+        }
     
-    #Carousel .carousel-control-next{
-        justify-content: end;
-        margin-right: -2%;
-    }
+        #ForgetPassword .ForgetPassword-card .row .form-control {
+            width: 45%;
+            margin-left: 15px;
+        }
     
-    /* #Carousel .carousel-control-prev,
-    .carousel-control-next{
-        color: EC982E;
-    } */
+        #ForgetPassword p {
+            font-size: 13px;
+        }
     
-    #LandingPage .fa-eye{
-        color: #EC982E;
-    }
+        #ForgetPassword button:hover {
+            background-color: #cc842c;
+        }
     
-    #LandingPage .judul-menu h3{
-        font-size: 25px;
-    }
     
-    #Product .card-text{
-        color: orange;
-    }
+        #Suggestion .box-suggest {
+            width: 106%;
+            background-color: #E5E5E5;
+            padding: 15px;
+            margin: 0 0 0 10px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px 1px rgb(228, 218, 218);
+        }
     
-    #Product .card .btn-primary{
-        background-color: orange;
-        border: none;
-        border-radius: 50px;
-        width: 180px;
-        height: autopx;
+        #Suggestion .input-suggestion {
+            width: 100%;
+            height: 400px;
+        }
     
-    }
+        #Suggestion .input-suggestion .form-control {
+            width: 90%;
+            margin-left: 50px;
+        }
     
-    #Product .card{
-        width: 150px;
-        height: 400px;
-        box-shadow: 0px 1px 4px;
-        border-radius: 8%;
-    }
+        #HistoryBuilding .image-description img {
+            width: 500px;
+            height: 300px;
+            margin-left: 15px;
+            border-radius: 10px;
+        }
     
-    #Footer {
-        margin-top: 80px;
-        margin-bottom: 30px;
-    }
+        /* #HistoryBuilding .image-description .left-menu:hover {
+            transform: translate(50px);
+            transition: 500ms;
+        } */
     
-    #Footer .copyright{
-        border: 1px solid #f38aaa;
-        background-color: #f38aaa ;
-        font-size: 25px;
-        font-weight: 400px;
-    }
+        #HistoryBuilding .image-description .left-menu {
+            width: 112%;
+        }
     
-    #Footer .copyright p{
-        margin-top: 16px;
-    }
     
-    /* List Product */
+        #HistoryBuilding .image-description  .desc-left {
+            width: 500px;
+            height: 220px;
+            background-color: rgba(68, 116, 157, 0.75);
+            padding: 15px;
+            border-radius: 20px;
+            margin-left: -100px;
     
-    #Danil .navbar-nav p {
-        color: rgba(0, 0, 0, 0.816);
-    }
+        }
     
-    #Danil .navbar-nav i {
-        color: orange;
-    }
+        #HistoryBuilding .image-description  .desc-left:hover {
+            width: 500px;
+            height: 260px;
+            background-color: rgba(39, 49, 58, 0.75);;
+            padding: 15px;
+            border-radius: 20px;
+            margin-left: -150px;
+            transform: translate(-50px);
+            transition: 500ms;
+        }
     
-    /* Breadcrumb */
-    #Breadcrumb .breadcrumb a{
-        color: black;
-    }
     
-    #Breadcrumb .breadcrumb{
-        background-color: white;
-    }
+        #HistoryBuilding .image-description .desc-right:hover {
+            width: 500px;
+            height: 220px;
+            background-color: rgba(22, 54, 82, 0.75);;
+            padding: 15px;
+            border-radius: 20px;
+            margin-right: -150px;
+            transform: translate(50px);
+            transition: 500ms;
+        }
     
-    #Breadcrumb .breadcrumb i{
-        color: orange;
-    }
+        #HistoryBuilding .image-description .desc-right {
+            width: 500px;
+            height: 260px;
+            background-color: rgba(68, 116, 157, 0.75);;
+            padding: 15px;
+            border-radius: 20px;
+            margin-right: -130px;
+            z-index: 3;
+        }
     
-    /* ProductDetail */
-    #Carousel2 .carousel-indicators li {
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-    }
+        #HistoryBuilding .image-description h3 {
+            color: white;
+        }
     
-    #Carousel2 .carousel-control-prev{
-        justify-content: start;
-        margin-left: -10%;
-    }
+        #HistoryBuilding .image-description .desc-history-building {
+            width: 300px;
+            color: white;
+            font-size: 15px;
+        }
     
-    #Carousel2 .carousel-control-next{
-        justify-content: end;
-        margin-right: -10%;
-    }
-    #Carousel2 .fa-arrow-circle-left,
-            .fa-arrow-circle-right{
-        font-size: 48px;
-        color: #EC982E;
-            }
+        #HistoryBuilding .image-description .more p{
+            font-size: 13px;
+            font-weight: bolder;
+            color: white;
+            text-align: end;
+            margin-top: 60px;
+            padding: 0;
+        }
     
-    #Carousel2 input {
-        width: 15%;
-    }
+        #HistoryBuilding .image-description .more p:hover {
+            color: grey;
+        }
     
-    #ProductDetail .judul-menu .col-lg-6 h3 {
-        font-size: 20px;
-    }
+        #HistoryBuilding .image-description a{
+            text-decoration: none;
+        }
     
-    #ProductDetail .judul-menu .col-lg-6 i {
-        color: orange;
-    }
+        #HistoryBuilding .image-description .right-menu {
+            width: 112%;
+            justify-content: end;
+        }
     
-    /* Keranjang */
-    #Keranjang .table img{
-        width: 170px;
-        height: 157px;
-    }
+        #HistoryBuilding .history-building {
+            position: relative;
+            width: 100%;
+            overflow-y: scroll;
+            height: 630px;
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0.5px 0.5px 10px 1px rgb(231, 221, 221);
+        }
     
-    /* #Keranjang .table h1{
-        text-align: right;
-    } */
-    #Harga .container h5{
-        text-align: right;
-    }
+        #HistoryBuilding .history-building .card-history-building a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
     
-    #Harga .col-auto .form-control{
-        width: 35%;
-    }
+        #HistoryBuilding .history-building .card-history-building a:hover {
+            text-decoration: none;
+            color: rgb(109, 109, 103);
+        }
     
-    /* #Harga .btn-primary{
-        justify-content: end;
-    } */
     
-    #Harga .col-lg-2{
-        width: 35px;
-        height: 20px;
-        border-radius: 25px;
-    }
+        /* News */
+        #News .box-news {
+            width: 106%;
+            background-color: white;
+            padding: 15px;
+            margin: 0 0 30px 10px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px 1px rgb(228, 218, 218);
+        }
     
-    #Succes .success-img{
-        width: 292px;
-        height: 324px;
-        object-fit: cover;
-    }
+        #News .box-news img {
+            height: 180px;
+        }
     
-    #Succes .text-ucapan{
-        color: orange;
-    }
+        #News .box-news .date-time {
+            margin-top: 90px;
+        }
     
-    #Succes .btn-primary{
-        border: none;
-    }
+        #News .box-news .date-time .time {
+            font-size: 14px;
+            padding: 0;
+        }
+    
+        #News .box-news .date-time .date {
+            padding-right: 30px;
+            font-size: 14px;
+        }
+    
+        #News a {
+            text-decoration: none;
+        }
+    
+        #News .box-news a {
+            color: black;
+        }
+    
+        #News .box-news .title a:hover {
+            text-decoration: none;
+            color: rgb(160, 149, 149);
+        }
+    
+    
+        /* Food */
+        #Food .food-image-description .food-description {
+            width: 290px;
+            height: 200px;
+            padding: 15px;
+            border-radius: 20px;
+            margin-top: -100px;
+            background-color: rgba(8, 248, 40, 0.75);
+        }
+    
+        #Food .food-image-description .food-description:hover {
+            width: 290px;
+            height: 200px;
+            padding: 15px;
+            border-radius: 20px;
+            margin-top: -200px;
+            background-color: rgba(69, 86, 102, 0.75);
+            transform: translate(0, 40px);
+            transition: 500ms;
+        }
+    
+        #Food .food-image-description  img {
+            width: 330px;
+            height: 330px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    
+        #Food .row-content {
+            margin-left: 0px;
+        }
+    
+        #Food .typical-food {
+            position: relative;
+            width: 100%;
+            overflow-y: scroll;
+            height: 630px;
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0.5px 0.5px 10px 1px rgb(231, 221, 221);
+        }
+    
+        #Food .typical-food .card-typical-food a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+    
+        #Food .typical-food .card-typical-food a:hover {
+            text-decoration: none;
+            color: rgb(109, 109, 103);
+        }
+    
+        /* PalembangHistory */
+        #PalembangHistory .left img {
+            width: 100%;
+        }
+    
+        #PalembangHistory .right img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            z-index: 1;
+        }
+    
+        #PalembangHistory .left p {
+            margin-top: 20px;
+        }
+    
+        #PalembangHistory .right .carousel-item .desc-history {
+            width: 80%;
+            background-color: #98898C;
+            z-index: 20;
+            margin-top: -150px;
+            border-radius: 20px;
+            left: 10%;
+            padding: 15px;
+            position: absolute;
+            opacity: 70%;
+        }
+    
+        #PalembangHistory .right .carousel-indicators {
+            margin: 0;
+            margin-bottom: -100px;
+            position: absolute;
+            background-color: red;
+            bottom: 0;
+        }
+    
+        #PalembangHistory .right .card-up {
+            height: 570px;
+        }
+    
+        #PalembangHistory .right .up .carousel-control-prev {
+            height: 50px;
+            top:-100px;
+            border: 0;
+            background-color: transparent;
+        }
+    
+        #PalembangHistory .right .up .carousel-control-next {
+            height: 50px;
+            top: -100px;
+            border: 0;
+            background-color: transparent;
+        }
+    
+        #PalembangHistory .right .down .carousel-control-prev {
+            height: 50px;
+            border: 0;
+            top: 0px;
+            background-color: transparent;
+        }
+    
+        #PalembangHistory .right .down .carousel-control-next {
+            height: 50px;
+            border: 0;
+            top: 0px;
+            background-color: transparent;
+        }
+    
+        #PalembangHistory .right .up .carousel-indicators img {
+            width: 130px;
+            height: 80px;
+            position: absolute;
+            left: 0;
+            top: -80px;
+            cursor: pointer;
+        }
+    
+        #PalembangHistory .right .carousel-indicators img:hover {
+            width: 135px;
+            height: 85px;
+            transition: 500ms;
+            position: absolute;
+            left: -2px;
+            top: -82px;
+            cursor: pointer;
+        }
+    
+        #PalembangHistory .right .down  .desc-belajarsejarahyuk {
+            width: 90%;
+            height: 195px;
+            position: absolute;
+            background-color: #787878;
+            /* margin-top: -100px; */
+            bottom: 10px;
+            left:5%;
+            padding: 15px;
+            border-radius: 20px;
+            opacity: 70%;
+            box-shadow: 0 0 10px 4px #5a5151;
+        }
+    
     
     
 }
 
-/* Product 2 */
-#Product2 .card-text{
-    color: orange;
-}
+@media screen and (max-width: 576px) {
+    body {
+        background-color: white;
+        font-family: 'Poppins', sans-serif;
+        width: 100%;
+        }
+    
+        a {
+            text-decoration: none;
+        }
+    
+        .carousel-control-prev, .carousel-control-next {
+            z-index: 2;
+        }
+    
+        #Header .navbar {
+            width: 100%;
+    
+        }
+    
+        #Header .search input[type=search] {
+            width: 350px;
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+    
+        #Header header {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        transition: background-color .3s ease;
+        z-index: 4;
+        background-color: #B4431D;
+        }
+    
+        #Header .nav-1 {
+            z-index: 2;
+        }
+    
+        #Header .nav-1 .languange-menu .inggris {
+            border-radius: 10px;
+        }
+    
+        #Header .languange-menu {
+            z-index: 10;
+        }
+    
+        #Header .nav-3 {
+            box-shadow: 0 0.5px 0.1px rgb(189, 179, 179);
+            z-index: 3;
+        }
+    
+        #Header .nav-2 {
+            z-index: 3;
+        }
+    
+        * {
+            z-index: 2;
+        }
+    
+        #Register .register-card {
+            width: 500px;
+            background-color: white;
+            color: black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            padding: 20px;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            border-radius: 15px;
+            box-shadow: 0.5px 0.5px 10px 1px rgb(231, 221, 221);
+        }
+    
+        #Register .register-card .row .form-control {
+            width: 45%;
+            margin-left: 15px;
+        }
+    
+        #Register p {
+            font-size: 13px;
+        }
+    
+        #Login .login-card {
+            width: 500px;
+            background-color: white;
+            color: black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            padding: 20px;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            border-radius: 15px;
+            box-shadow: 0.5px 0.5px 10px 1px rgb(231, 221, 221);
+        }
+    
+        #Login .login-card .row .form-control {
+            width: 45%;
+            margin-left: 15px;
+        }
+    
+        #Login p {
+            font-size: 13px;
+        }
+    
+        .under-header {
+            margin-top: 150px;
+            margin-left: 10px;
+        }
+    
+        .breadcrumb {
+            background-color: white;
+        }
+    
+        #Report .box-report {
+            width: 106%;
+            background-color: #E5E5E5;
+            padding: 15px;
+            margin: 0 0 0 10px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px 1px rgb(228, 218, 218);
+        }
+    
+        #Report .box-report input[type=file] {
+            padding: 0;
+            width: 90%;
+            height: 33px;
+        }
+    
+        #Report .box-report .file-lapor {
+            cursor: pointer;
+        }
+    
+        #Report .box-report button[type=submit] {
+            width: 10%;
+        }
+    
+        #SideNews .update-news {
+            position: relative;
+            width: 100%;
+            overflow-y: scroll;
+            height: 630px;
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0.5px 0.5px 10px 1px rgb(231, 221, 221);
+        }
+    
+        #SideNews .update-news .card-update-news a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+    
+        #SideNews .update-news .card-update-news a:hover {
+            text-decoration: none;
+            color: rgb(109, 109, 103);
+        }
+    
+        #SideNews .popular-news {
+            width: 100%;
+            background-color: white;
+            margin-bottom: 20px;
+            height: 520px;
+            padding: 15px;
+            overflow-y: scroll;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0.5px 0.5px 10px 1px rgb(231, 221, 221);
+        }
+    
+        #SideNews .popular-news .card-popular-news a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+    
+        #SideNews .popular-news .card-popular-news a:hover {
+            text-decoration: none;
+            color: rgb(109, 109, 103);
+        }
+    
+        #CoronaVaksinHalf .corona-vaksin {
+            margin-top: 30px;
+            margin-left: -5px;
+            width: 100%;
+        }
+    
+        #CoronaVaksinHalf .scroll {
+            overflow-y: scroll;
+        }
+    
+        #CoronaVaksinHalf .update-covid-public {
+            width: 100%;
+            background-color: white;
+            margin-top: 20px;
+            padding: 15px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0.5px 0.5px 10px 1px rgb(231, 221, 221);
+        }
+    
+        #CoronaVaksinHalf .update-covid-public .terkonfirmasi {
+            width: 24%;
+            background-color: #484848;
+            margin-left: 15px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    
+        #CoronaVaksinHalf .update-covid-public .suspek {
+            width: 24%;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            background-color: #FFA800;
+        }
+    
+        #CoronaVaksinHalf .update-covid-public .meninggal {
+            width: 24%;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            background-color: #FF0000;
+        }
+    
+        #CoronaVaksinHalf .update-covid-public .sembuh {
+            width: 24%;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            background-color: #00FF0A;
+        }
+    
+        #CoronaVaksinHalf .update-vaksin-public {
+            background-color: white;
+            margin-top: 20px;
+            margin-left: 15px;
+            width: 116%;
+            padding: 15px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0.5px 0.5px 10px 1px rgb(231, 221, 221);
+        }
+    
+        #CoronaVaksinHalf .update-vaksin-public .dosis-1 {
+            width: 31%;
+            background-color: #484848;
+            margin-left: 15px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    
+        #CoronaVaksinHalf .update-vaksin-public .dosis-2 {
+            width: 31%;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            background-color: #FFA800;
+        }
+    
+        #CoronaVaksinHalf .update-vaksin-public .dosis-3 {
+            width: 31%;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            background-color: #FF0000;
+        }
+    
+        #CoronaVaksinFull .corona-vaksin {
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+    
+        #CoronaVaksinFull .update-covid-public {
+            width: 50%;
+            background-color: white;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            padding: 15px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0.5px 0.5px 10px 1px rgb(231, 221, 221);
+        }
+    
+        #CoronaVaksinFull .update-covid-public .terkonfirmasi {
+            width: 24%;
+            background-color: #484848;
+            margin-left: 15px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    
+        #CoronaVaksinFull .update-covid-public .suspek {
+            width: 24%;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            background-color: #FFA800;
+        }
+    
+        #CoronaVaksinFull .update-covid-public .meninggal {
+            width: 24%;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            background-color: #FF0000;
+        }
+    
+        #CoronaVaksinFull .update-covid-public .sembuh {
+            width: 24%;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            background-color: #00FF0A;
+        }
+    
+        #CoronaVaksinFull .update-vaksin-public {
+            background-color: white;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            width: 45%;
+            padding: 15px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0.5px 0.5px 10px 1px rgb(231, 221, 221);
+        }
+    
+        #CoronaVaksinFull .update-vaksin-public .dosis-1 {
+            width: 32%;
+            background-color: #484848;
+            margin-left: 15px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    
+        #CoronaVaksinFull .update-vaksin-public .dosis-2 {
+            width: 32%;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            background-color: #FFA800;
+        }
+    
+        #CoronaVaksinFull .update-vaksin-public .dosis-3 {
+            width: 32%;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            background-color: #FF0000;
+        }
+    
+        .footer {
+            width: 100%;
+            height: 200px;
+            background-color: #B4431D;
+            position: absolute;
+            margin-top: 100px;
+        }
+    
+        .footer .img {
+            width: 100px;
+        }
+    
+        .footer .footer-left , .footer-right {
+            text-align: start;
+            margin-top: 60px;
+            left: 40px;
+        }
+    
+        .footer .line {
+            width: 1px;
+            height: 170px;
+            border-left: 1px black solid;
+            margin-top: 15px;
+        }
+    
+        #LandingPage header {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        transition: background-color 0.2s ease;
+        z-index: 3;
+        }
+    
+        #LandingPage .nav-1 {
+            z-index: 2;
+        }
+    
+        #LandingPage .nav-1 .languange-menu .inggris {
+            border-radius: 10px;
+        }
+    
+        #LandingPage .navbar {
+            width: 100%;
+        }
 
-#Product2 .card .btn-primary{
-    background-color: orange;
-    border: none;
-    border-radius: 50px;
-    width: 180px;
-    height: autopx;
+        #LandingPage .nav-2 img{
+            width: 10rem;
+            height: auto;
+        }
+    
+        #LandingPage .search input[type=search] {
+            width: 15rem;
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+    
+        #LandingPage .breadcrumb {
+            background-color: white;
+            margin-top: 20px;
+        }
+    
+        #LandingPage .carousel .banner {
+            width: 100%;
+            height: 70%;
+            border-radius: 20px;
+        }
+    
+        #LandingPage .slider {
+            width: 95%;
+            top: 30px;
+        }
+    
+        #LandingPage .row-card {
+            margin-top: 10px;
+            width: 300%;
+        }
+    
+        #LandingPage .card {
+            box-sizing: border-box;
+            border-radius: 10px;
+            left: 50px;
+            width: 13rem;
+            height: 100%;
+            margin-right: 20px;
+            box-shadow: 0.5px 0.5px 7px 1px rgb(189, 189, 189);
+        }
+    
+        #LandingPage .card .card-body {
+            padding: 10px 10px 0 10px;
+        }
+    
+        #LandingPage .card img {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+    
+        #LandingPage .card .date {
+            font-size: 13px;
+            font-weight: bolder;
+            text-align: end;
+            margin-top: 50px;
+        }
+    
+        #LandingPage .galery {
+            width: 100%;
+            height: 670px;
+            /* background-color: blue; */
+            margin-top: 40px;
+            padding: 25px;
+            padding-left: 70px;
+        }
+    
+        #LandingPage .galery .left img {
+            height: 300px;
+            width: 600px;
+        }
+    
+        #LandingPage .galery .left .desc-image {
+            width: 80%;
+            height: 200px;
+            margin-top: -80px;
+            position: absolute;
+            left: 10%;
+            border-radius: 20px;
+            background-color: #C4C4C4;
+            padding: 15px;
+            opacity: 70%;
+        }
+    
+        #LandingPage .galery .left .desc-image:hover {
+            width: 80%;
+            height: 200px;
+            margin-top: -110px;
+            transition: 500ms;
+            position: absolute;
+            left: 10%;
+            border-radius: 20px;
+            background-color: #888282;
+            padding: 15px;
+            opacity: 70%;
+        }
+    
+        #LandingPage .left .carousel-control-prev {
+            height: 50px;
+            border: 0;
+            top: 20%;
+            background-color: transparent;
+        }
+    
+        #LandingPage .left .carousel-control-next {
+            height: 50px;
+            border: 0;
+            top: 20%;
+            background-color: transparent;
+        }
+    
+        #LandingPage .left .carousel-indicators img {
+            width: 130px;
+            height: 80px;
+            position: absolute;
+            left: 0;
+            top: -250px;
+            cursor: pointer;
+        }
+    
+        #LandingPage .left .carousel-indicators img:hover {
+            width: 135px;
+            height: 85px;
+            transition: 500ms;
+            position: absolute;
+            left: -2px;
+            top: -252px;
+            cursor: pointer;
+        }
+    
+        #LandingPage .left .card-up {
+            height: 700px;
+        }
+    
+        #LandingPage .right {
+            left: 50px;
+        }
+    
+        #LandingPage .right img {
+            width: 400px;
+            height: 350px;
+            object-fit: cover;
+        }
+    
+        #LandingPage .right .desc-pedulilingkungan {
+            width: 350px;
+            height: 200px;
+            background-color: rgb(148, 126, 126);
+            position: absolute;
+            top: 275px;
+            left: 250px;
+            color: black;
+            opacity: 70%;
+            padding: 15px;
+        }
+    
+        #LandingPage .right .desc-pedulilingkungan:hover {
+            width: 350px;
+            height: 200px;
+            background-color: black;
+            position: absolute;
+            top: 255px;
+            left: 230px;
+            transition: 500ms;
+            color: white;
+            padding: 15px;
+            opacity: 70%;
+        }
+    
+        #HeroSection {
+            width: 100%;
+            height: 42rem;
+            z-index: 1;
+            background: linear-gradient(100.07deg, #F80000 0.41%, rgba(0, 0, 0, 0.0854168) 72.34%, rgba(240, 35, 35, 0.47) 97.26%);
+        }
 
-}
+        #HeroSection .text-hero-section {
+            top: 9rem;
+            left: 1rem;
+        }
 
-#Product2 .card{
-    width: 150px;
-    height: 40s0px;
-    box-shadow: 0px 1px 4px;
-    border-radius: 8%;
+        #HeroSection img {
+            width: 90%;
+            height: 40%;
+            right: 0;
+            position: absolute;
+            top: 30rem;
+        }
+    
+         .scrolling-active {
+            background-color: #E5E5E5;
+            background-image: url(../src/assets/icons/batik.png);
+            box-shadow: 0 0.5px 0.1px rgb(189, 179, 179);
+            top: 0;
+            transition: top 0.5s;
+        }
+    
+    
+        #ForgetPassword .ForgetPassword-card {
+            width: 500px;
+            background-color: rgba(0, 0, 0, 0.67);;
+            color: black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            padding: 50px;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            box-shadow: 0.5px 0.5px 2px 7px rgba(0, 0, 0, 0.25);;
+        }
+    
+        #ForgetPassword .ForgetPassword-card .row .form-control {
+            width: 45%;
+            margin-left: 15px;
+        }
+    
+        #ForgetPassword p {
+            font-size: 13px;
+        }
+    
+        #ForgetPassword button:hover {
+            background-color: #cc842c;
+        }
+    
+    
+        #Suggestion .box-suggest {
+            width: 106%;
+            background-color: #E5E5E5;
+            padding: 15px;
+            margin: 0 0 0 10px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px 1px rgb(228, 218, 218);
+        }
+    
+        #Suggestion .input-suggestion {
+            width: 100%;
+            height: 400px;
+        }
+    
+        #Suggestion .input-suggestion .form-control {
+            width: 90%;
+            margin-left: 50px;
+        }
+    
+        #HistoryBuilding .image-description img {
+            width: 500px;
+            height: 300px;
+            margin-left: 15px;
+            border-radius: 10px;
+        }
+    
+        /* #HistoryBuilding .image-description .left-menu:hover {
+            transform: translate(50px);
+            transition: 500ms;
+        } */
+    
+        #HistoryBuilding .image-description .left-menu {
+            width: 112%;
+        }
+    
+    
+        #HistoryBuilding .image-description  .desc-left {
+            width: 500px;
+            height: 220px;
+            background-color: rgba(68, 116, 157, 0.75);
+            padding: 15px;
+            border-radius: 20px;
+            margin-left: -100px;
+    
+        }
+    
+        #HistoryBuilding .image-description  .desc-left:hover {
+            width: 500px;
+            height: 260px;
+            background-color: rgba(39, 49, 58, 0.75);;
+            padding: 15px;
+            border-radius: 20px;
+            margin-left: -150px;
+            transform: translate(-50px);
+            transition: 500ms;
+        }
+    
+    
+        #HistoryBuilding .image-description .desc-right:hover {
+            width: 500px;
+            height: 220px;
+            background-color: rgba(22, 54, 82, 0.75);;
+            padding: 15px;
+            border-radius: 20px;
+            margin-right: -150px;
+            transform: translate(50px);
+            transition: 500ms;
+        }
+    
+        #HistoryBuilding .image-description .desc-right {
+            width: 500px;
+            height: 260px;
+            background-color: rgba(68, 116, 157, 0.75);;
+            padding: 15px;
+            border-radius: 20px;
+            margin-right: -130px;
+            z-index: 3;
+        }
+    
+        #HistoryBuilding .image-description h3 {
+            color: white;
+        }
+    
+        #HistoryBuilding .image-description .desc-history-building {
+            width: 300px;
+            color: white;
+            font-size: 15px;
+        }
+    
+        #HistoryBuilding .image-description .more p{
+            font-size: 13px;
+            font-weight: bolder;
+            color: white;
+            text-align: end;
+            margin-top: 60px;
+            padding: 0;
+        }
+    
+        #HistoryBuilding .image-description .more p:hover {
+            color: grey;
+        }
+    
+        #HistoryBuilding .image-description a{
+            text-decoration: none;
+        }
+    
+        #HistoryBuilding .image-description .right-menu {
+            width: 112%;
+            justify-content: end;
+        }
+    
+        #HistoryBuilding .history-building {
+            position: relative;
+            width: 100%;
+            overflow-y: scroll;
+            height: 630px;
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0.5px 0.5px 10px 1px rgb(231, 221, 221);
+        }
+    
+        #HistoryBuilding .history-building .card-history-building a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+    
+        #HistoryBuilding .history-building .card-history-building a:hover {
+            text-decoration: none;
+            color: rgb(109, 109, 103);
+        }
+    
+    
+        /* News */
+        #News .box-news {
+            width: 106%;
+            background-color: white;
+            padding: 15px;
+            margin: 0 0 30px 10px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px 1px rgb(228, 218, 218);
+        }
+    
+        #News .box-news img {
+            height: 180px;
+        }
+    
+        #News .box-news .date-time {
+            margin-top: 90px;
+        }
+    
+        #News .box-news .date-time .time {
+            font-size: 14px;
+            padding: 0;
+        }
+    
+        #News .box-news .date-time .date {
+            padding-right: 30px;
+            font-size: 14px;
+        }
+    
+        #News a {
+            text-decoration: none;
+        }
+    
+        #News .box-news a {
+            color: black;
+        }
+    
+        #News .box-news .title a:hover {
+            text-decoration: none;
+            color: rgb(160, 149, 149);
+        }
+    
+    
+        /* Food */
+        #Food .food-image-description .food-description {
+            width: 290px;
+            height: 200px;
+            padding: 15px;
+            border-radius: 20px;
+            margin-top: -100px;
+            background-color: rgba(8, 248, 40, 0.75);
+        }
+    
+        #Food .food-image-description .food-description:hover {
+            width: 290px;
+            height: 200px;
+            padding: 15px;
+            border-radius: 20px;
+            margin-top: -200px;
+            background-color: rgba(69, 86, 102, 0.75);
+            transform: translate(0, 40px);
+            transition: 500ms;
+        }
+    
+        #Food .food-image-description  img {
+            width: 330px;
+            height: 330px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    
+        #Food .row-content {
+            margin-left: 0px;
+        }
+    
+        #Food .typical-food {
+            position: relative;
+            width: 100%;
+            overflow-y: scroll;
+            height: 630px;
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0.5px 0.5px 10px 1px rgb(231, 221, 221);
+        }
+    
+        #Food .typical-food .card-typical-food a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+    
+        #Food .typical-food .card-typical-food a:hover {
+            text-decoration: none;
+            color: rgb(109, 109, 103);
+        }
+    
+        /* PalembangHistory */
+        #PalembangHistory .left img {
+            width: 100%;
+        }
+    
+        #PalembangHistory .right img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            z-index: 1;
+        }
+    
+        #PalembangHistory .left p {
+            margin-top: 20px;
+        }
+    
+        #PalembangHistory .right .carousel-item .desc-history {
+            width: 80%;
+            background-color: #98898C;
+            z-index: 20;
+            margin-top: -150px;
+            border-radius: 20px;
+            left: 10%;
+            padding: 15px;
+            position: absolute;
+            opacity: 70%;
+        }
+    
+        #PalembangHistory .right .carousel-indicators {
+            margin: 0;
+            margin-bottom: -100px;
+            position: absolute;
+            background-color: red;
+            bottom: 0;
+        }
+    
+        #PalembangHistory .right .card-up {
+            height: 570px;
+        }
+    
+        #PalembangHistory .right .up .carousel-control-prev {
+            height: 50px;
+            top:-100px;
+            border: 0;
+            background-color: transparent;
+        }
+    
+        #PalembangHistory .right .up .carousel-control-next {
+            height: 50px;
+            top: -100px;
+            border: 0;
+            background-color: transparent;
+        }
+    
+        #PalembangHistory .right .down .carousel-control-prev {
+            height: 50px;
+            border: 0;
+            top: 0px;
+            background-color: transparent;
+        }
+    
+        #PalembangHistory .right .down .carousel-control-next {
+            height: 50px;
+            border: 0;
+            top: 0px;
+            background-color: transparent;
+        }
+    
+        #PalembangHistory .right .up .carousel-indicators img {
+            width: 130px;
+            height: 80px;
+            position: absolute;
+            left: 0;
+            top: -80px;
+            cursor: pointer;
+        }
+    
+        #PalembangHistory .right .carousel-indicators img:hover {
+            width: 135px;
+            height: 85px;
+            transition: 500ms;
+            position: absolute;
+            left: -2px;
+            top: -82px;
+            cursor: pointer;
+        }
+    
+        #PalembangHistory .right .down  .desc-belajarsejarahyuk {
+            width: 90%;
+            height: 195px;
+            position: absolute;
+            background-color: #787878;
+            /* margin-top: -100px; */
+            bottom: 10px;
+            left:5%;
+            padding: 15px;
+            border-radius: 20px;
+            opacity: 70%;
+            box-shadow: 0 0 10px 4px #5a5151;
+        }
+    
+    
+    
 }

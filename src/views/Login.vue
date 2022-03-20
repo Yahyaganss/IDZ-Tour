@@ -34,7 +34,7 @@
             </label>
           </div>
           <div class="w-50 text-md-right">
-            <a href="#">Forgot Password</a>
+            <router-link to="/forget-password">Forgot Password</router-link>
           </div>
         </div>
         <div class="form-group">
