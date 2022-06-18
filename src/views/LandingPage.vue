@@ -1,11 +1,8 @@
 <template>
-  <div id="LandingPage">
-    <nav
-      class="navbar navbar-expand-lg navbar-light nav-1"
-      style="background-color: #faefeb"
-    >
+  <div id="LandingPage" style="background-color: #f9fafc">
+    <nav class="navbar navbar-expand-lg navbar-light nav-1">
       <div class="container-fluid">
-        <div class="dropdown languange">
+        <div class="dropdown languange ml-5">
           <button
             class="btn btn-light dropdown-toggle"
             type="button"
@@ -69,98 +66,72 @@
           </button>
         </router-link>
       </div>
+      <img
+        src="../assets/icons/batik.png"
+        style="width: 90%; position: absolute; height: 100%; z-index: -1"
+        alt=""
+      />
     </nav>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light nav-2 bg-transparent">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light nav-2 position-fixed">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <router-link to="/">
             <img
               src="../assets/logo/logo.png"
               alt=""
+              style="width: 15rem; height: auto"
             />
           </router-link>
-        </div>
-      </nav>
-      <nav class="navbar navbar-expand-lg navbar-light bg-transparent nav-3">
-        <div class="container-fluid">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <router-link to="/" class="nav-link">Beranda</router-link>
-              </li>
-              <li class="nav-item">
-                <router-link class="nav-link" to="/berita">Berita</router-link>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
+          <ul class="navbar-nav mr-auto" style="margin-left: 50px">
+            <li class="nav-item active">
+              <router-link to="/" class="nav-link">Beranda</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/berita">Berita</router-link>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Layanan
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <router-link class="dropdown-item" to="/report"
+                  >Pengaduan</router-link
                 >
-                  Layanan
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <router-link class="dropdown-item" to="/report"
-                    >Pengaduan</router-link
-                  >
-                  <a class="dropdown-item" href="#">Kritik & Saran</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
+                <a class="dropdown-item" href="#">Kritik & Saran</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Ragam Khas
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <router-link class="dropdown-item" to="/makanan-khas-palembang"
+                  >Makanan Khas</router-link
                 >
-                  Ragam Khas
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <router-link
-                    class="dropdown-item"
-                    to="/makanan-khas-palembang"
-                    >Makanan Khas</router-link
-                  >
-                  <router-link class="dropdown-item" to="/bangunan-sejarah"
-                    >Bangunan Sejarah</router-link
-                  >
-                  <a class="dropdown-item" href="#">Seni Budaya</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
+                <router-link class="dropdown-item" to="/bangunan-sejarah"
+                  >Bangunan Sejarah</router-link
                 >
-                  Profile
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Struktur Pemerintah</a>
-                  <router-link class="dropdown-item" to="/sejarah-palembang"
-                    >Sejarah Palembang</router-link
-                  >
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><i class="fa-solid fa-circle-exclamation"></i>Update Corona
-                  Virus</a
-                >
-              </li>
-            </ul>
-            <div class="search">
+                <a class="dropdown-item" href="#">Seni Budaya</a>
+              </div>
+            </li>
+          </ul>
+          <div class="search">
             <input
               class="form-control mr-sm-2"
               type="search"
@@ -169,26 +140,75 @@
             />
             <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
           </div>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class="active mark"
+        ></li>
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="1"
+          class="mark"
+        ></li>
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="2"
+          class="mark"
+        ></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="home-slider">
+            <img src="../assets/images/bg-masjid.png" alt="" />
+            <div class="text-home-slider">
+              <h1>MARILAH KITA JAGA BERSAMA!!!</h1>
+            </div>
           </div>
         </div>
-      </nav>
-      <!-- <img src="../assets/icons/batik.png" style="width:100%; position:absolute; height:100%; top:0; z-index:2;" alt=""> -->
-    </header>
-    <div class="container-fluid"></div>
-    <div id="HeroSection">
-      <div class="row">
-        <div class="col-lg-4 text-hero-section" >
-          <h1 style="color: white">Informasi Resmi Kota Palembang.</h1>
-          <p style="color: white">
-            <b>IDZ-News</b> dandabhdadjadmandbjadadhabdandadj
-            iaodhadasmdandjada1jdsadjbasdmaskmdasdbad asdkasdadansda
-          </p>
+        <div class="carousel-item">
+          <div class="home-slider">
+            <img src="../assets/images/ampera-night.png" alt="" />
+            <div class="text-home-slider">
+              <h1>MARILAH KITA JAGA BERSAMA!!!</h1>
+            </div>
+          </div>
         </div>
-        <img
-          src="../assets/images/monpera.png"
-          alt=""
-        />
+        <div class="carousel-item">
+          <div class="home-slider">
+            <img src="../assets/images/ampera-night.png" alt="" />
+            <div class="text-home-slider">
+              <h1>MARILAH KITA JAGA BERSAMA!!!</h1>
+            </div>
+          </div>
+        </div>
       </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-target="#carouselExampleIndicators"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-target="#carouselExampleIndicators"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </button>
     </div>
     <center>
       <div
@@ -262,68 +282,290 @@
         </button>
       </div>
     </center>
-    <h3 style="margin-top:70px; margin-left:35px;">Berita Terbaru</h3>
-    <div class="row row-card">
-      <div class="card">
-        <img src="../assets/images/corona.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <p class="date">Kamis, 03 Maret 2022</p>
+    <h3 style="margin-top: 40px; margin-left: 35px">Berita Terbaru</h3>
+    <div class="container-fluid" style="width: 100%; margin: auto">
+      <!-- <ul id="autoWidth" class="cs-hidden" style="left: 0; margin-left: -50px">
+        <li class="item-a">
+          <div class="card">
+            <img
+              src="../assets/images/corona.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <router-link to="/berita">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </router-link>
+              <p class="date">Kamis, 03 Maret 2022</p>
+            </div>
+          </div>
+        </li>
+        <li class="item-a">
+          <div class="card">
+            <img
+              src="../assets/images/corona.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <router-link to="/berita">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </router-link>
+              <p class="date">Kamis, 03 Maret 2022</p>
+            </div>
+          </div>
+        </li>
+        <li class="item-a">
+          <div class="card">
+            <img
+              src="../assets/images/corona.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <router-link to="/berita">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </router-link>
+              <p class="date">Kamis, 03 Maret 2022</p>
+            </div>
+          </div>
+        </li>
+        <li class="item-a">
+          <div class="card">
+            <img
+              src="../assets/images/corona.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <router-link to="/berita">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </router-link>
+              <p class="date">Kamis, 03 Maret 2022</p>
+            </div>
+          </div>
+        </li>
+        <li class="item-a">
+          <div class="card">
+            <img
+              src="../assets/images/corona.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <router-link to="/berita">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </router-link>
+              <p class="date">Kamis, 03 Maret 2022</p>
+            </div>
+          </div>
+        </li>
+        <li class="item-a">
+          <div class="card">
+            <img
+              src="../assets/images/corona.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <router-link to="/berita">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </router-link>
+              <p class="date">Kamis, 03 Maret 2022</p>
+            </div>
+          </div>
+        </li>
+        <li class="item-a">
+          <div class="card">
+            <img
+              src="../assets/images/corona.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <router-link to="/berita">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </router-link>
+              <p class="date">Kamis, 03 Maret 2022</p>
+            </div>
+          </div>
+        </li>
+        <li class="item-a">
+          <div class="card">
+            <img
+              src="../assets/images/corona.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <router-link to="/berita">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </router-link>
+              <p class="date">Kamis, 03 Maret 2022</p>
+            </div>
+          </div>
+        </li>
+        <li class="item-a">
+          <div class="card">
+            <img
+              src="../assets/images/corona.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <router-link to="/berita">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </router-link>
+              <p class="date">Kamis, 03 Maret 2022</p>
+            </div>
+          </div>
+        </li>
+        <li class="item-a">
+          <div class="card">
+            <img
+              src="../assets/images/corona.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <router-link to="/berita">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </router-link>
+              <p class="date">Kamis, 03 Maret 2022</p>
+            </div>
+          </div>
+        </li>
+      </ul> -->
+      <div class="row">
+        <div class="card">
+          <router-link to="/berita">
+            <img
+              src="../assets/images/corona.png"
+              class="card-img-top"
+              alt="..."
+            />
+          </router-link>
+          <div class="card-body">
+            <router-link to="/berita">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </router-link>
+            <p class="date">Kamis, 03 Maret 2022</p>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <img src="../assets/images/corona.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <p class="date">Kamis, 03 Maret 2022</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="../assets/images/corona.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <p class="date">Kamis, 03 Maret 2022</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="../assets/images/corona.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <p class="date">Kamis, 03 Maret 2022</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="../assets/images/corona.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <p class="date">Kamis, 03 Maret 2022</p>
-        </div>
+        <router-link to="/berita">
+          <div class="card">
+            <img
+              src="../assets/images/corona.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <p class="date">Kamis, 03 Maret 2022</p>
+            </div>
+          </div>
+        </router-link>
+        <router-link to="/berita">
+          <div class="card">
+            <img
+              src="../assets/images/corona.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <p class="date">Kamis, 03 Maret 2022</p>
+            </div>
+          </div>
+        </router-link>
+        <router-link to="/berita">
+          <div class="card">
+            <img
+              src="../assets/images/corona.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <p class="date">Kamis, 03 Maret 2022</p>
+            </div>
+          </div>
+        </router-link>
+        <router-link to="/berita">
+          <div class="card">
+            <img
+              src="../assets/images/corona.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <p class="date">Kamis, 03 Maret 2022</p>
+            </div>
+          </div>
+        </router-link>
       </div>
     </div>
     <div class="galery">
-      <img src="../assets/images/ampera-night.png" alt="" style="width:100%; position:absolute; left:0; height:90%; margin-top:-25px;">
+      <img
+        src="../assets/images/ampera-night.png"
+        alt=""
+        style="
+          width: 100%;
+          position: absolute;
+          left: 0;
+          height: 90%;
+          margin-top: -25px;
+        "
+      />
       <h3>Galeri Foto</h3>
       <div class="row">
         <div class="col-lg-6 left">
-          <!-- <img src="../assets/images/banner1.jpeg" alt="">
-          <div class="desc-image">
-            <h3>odjaoda</h3>
-          </div> -->
           <div
             id="carouselExampleIndicators"
             class="carousel slide"
@@ -412,14 +654,14 @@
         </div>
         <div class="col-lg-6 right">
           <h3>#PeduliLingkungan</h3>
-          <img src="../assets/images/banner1.jpeg" alt="">
+          <img src="../assets/images/banner1.jpeg" alt="" />
           <div class="desc-pedulilingkungan">
             <h3>dojaodjadfa-flip-horizontal</h3>
           </div>
         </div>
       </div>
     </div>
-    <corona-vaksin-full />
+    <corona-vaksin-full style="margin-top: 100px" />
     <Footer />
   </div>
 </template>
@@ -427,6 +669,7 @@
 <script>
 import Footer from "../components/Footer.vue";
 import CoronaVaksinFull from "../components/CoronaVaksinFull.vue";
+import axios from "axios";
 
 export default {
   name: "LandingPage",
@@ -434,10 +677,14 @@ export default {
     Footer,
     CoronaVaksinFull,
   },
+  async created() {
+    const { data } = await axios.get("https://covidtracking.com/api/us/daily");
+    console.log(data);
+  },
 };
 
 window.addEventListener("scroll", function () {
-  let header = document.querySelector("header");
+  let header = document.querySelector(".nav-2");
   let windowPosition = window.scrollY > 0;
   header.classList.toggle("scrolling-active", windowPosition);
 });
@@ -447,9 +694,19 @@ window.onscroll = function () {
 };
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("navbar").style.top = "0";
+    document.getElementById("navbar").style.top = "0px";
   } else {
     document.getElementById("navbar").style.top = "-100px";
   }
 }
+
+// $(document).ready(function () {
+//   $("#autoWidth").lightSlider({
+//     autoWidth: true,
+//     loop: false,
+//     onSliderLoad: function () {
+//       $("#autoWidth").removeClass("cs-hidden");
+//     },
+//   });
+// });
 </script>

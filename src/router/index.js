@@ -7,9 +7,10 @@ import Report from '../views/Report'
 import ForgetPassword from '../views/ForgetPassword'
 import Suggestion from '../views/Suggestion'
 import HistoryBuilding from '../views/HistoryBuilding'
-import  News from '../views/News'
+import News from '../views/News'
 import Food from '../views/Food'
 import PalembangHistory from '../views/PalembangHistory'
+import testing from '../views/testing'
 Vue.use(VueRouter)
 
 const routes = [
@@ -62,6 +63,11 @@ const routes = [
     path: '/sejarah-palembang',
     name: 'PalembangHistory',
     component: PalembangHistory
+  },
+  {
+    path: '/testing',
+    name: 'testing',
+    component: testing
   },
 ]
 

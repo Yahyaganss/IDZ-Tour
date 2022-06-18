@@ -1,6 +1,6 @@
 <template>
-    <div class="footer">
-      <div class="row" >
+    <div id="Footer">
+      <div class="row footer" >
         <div class="col-lg-4 footer-left">
           <a href=""><img src="../assets/logo/logo.png" alt="" height="auto" width="300px"></a>
           <p>@Copyright 2022 IDZNEWS</p>
@@ -17,7 +17,7 @@
           <h2>Palembang</h2>
           <h5>06 Maret 2022</h5>
         </div>
-        <img src="../assets/icons/batik.png" style="width:100%; position:absolute; height:100%; z-index: -1;" alt="">
+        <img src="../assets/icons/batik.png" style="width:98%; position:absolute; height:100%; z-index: -1;" alt="">
       </div>
     </div>
 </template>

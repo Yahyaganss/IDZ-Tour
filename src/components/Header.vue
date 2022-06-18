@@ -1,8 +1,8 @@
 <template>
   <div id="Header">
-    <nav class="navbar navbar-expand-lg navbar-light nav-1 " style="background-color:#faefeb;"> 
+    <nav class="navbar navbar-expand-lg navbar-light nav-1">
       <div class="container-fluid">
-        <div class="dropdown">
+        <div class="dropdown languange ml-5">
           <button
             class="btn btn-light dropdown-toggle"
             type="button"
@@ -16,8 +16,8 @@
             Bahasa Indonesia
           </button>
           <div
-            class="dropdown-menu p-0 mt-2 languange"
-            style="width: 90%; border-radius: 10px; margin-left: 12px;"
+            class="dropdown-menu p-0 mt-2 languange-menu"
+            style="width: 90%; border-radius: 10px; margin-left: 12px"
             aria-labelledby="dropdownMenuButton"
           >
             <router-link
@@ -49,34 +49,89 @@
         </div>
         <router-link to="/register">
           <button
-          type="button"
-          class="btn btn-danger"
-          style="border-radius: 20px; padding: 7px 20px; margin-right: 10px"
+            type="button"
+            class="btn btn-danger"
+            style="border-radius: 20px; padding: 7px 20px; margin-right: 10px"
           >
             Buat Akun
           </button>
         </router-link>
         <router-link to="/login">
           <button
-          type="button"
-          class="btn btn-primary"
-          style="border-radius: 20px; padding: 7px 15px"
+            type="button"
+            class="btn btn-primary"
+            style="border-radius: 20px; padding: 7px 15px"
           >
             Masuk
           </button>
         </router-link>
       </div>
+      <img
+        src="../assets/icons/batik.png"
+        style="width: 95%; position: absolute; height: 100%; z-index: -1"
+        alt=""
+      />
     </nav>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light nav-2">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light nav-2 position-fixed">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <router-link to="/">
             <img
-            src="../assets/logo/logo.png"
-            style="height: auto; width: 250px"
-            alt=""
-          />
+              src="../assets/logo/logo.png"
+              alt=""
+              style="width: 15rem; height: auto"
+            />
           </router-link>
+          <ul class="navbar-nav mr-auto" style="margin-left: 50px">
+            <li class="nav-item active">
+              <router-link to="/" class="nav-link">Beranda</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/berita">Berita</router-link>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Layanan
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <router-link class="dropdown-item" to="/report"
+                  >Pengaduan</router-link
+                >
+                <a class="dropdown-item" href="#">Kritik & Saran</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Ragam Khas
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <router-link class="dropdown-item" to="/makanan-khas-palembang"
+                  >Makanan Khas</router-link
+                >
+                <router-link class="dropdown-item" to="/bangunan-sejarah"
+                  >Bangunan Sejarah</router-link
+                >
+                <a class="dropdown-item" href="#">Seni Budaya</a>
+              </div>
+            </li>
+            
+          </ul>
           <div class="search">
             <input
               class="form-control mr-sm-2"
@@ -87,81 +142,8 @@
             <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
           </div>
         </div>
-      </nav>
-      <nav class="navbar navbar-expand-lg navbar-light nav-3">
-        <div class="container-fluid">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <router-link to="/" class="nav-link">Beranda</router-link>
-              </li>
-              <li class="nav-item">
-                <router-link class="nav-link" to="/berita">Berita</router-link>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Layanan
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <router-link class="dropdown-item" to="/report">Pengaduan</router-link>
-                  <router-link class="dropdown-item" to="/saran">Kritik & Saran</router-link>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Ragam Khas
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <router-link class="dropdown-item" to="/makanan-khas-palembang">Makanan Khas</router-link>
-                  <router-link class="dropdown-item" to="/bangunan-sejarah">Bangunan Sejarah</router-link>
-                  <a class="dropdown-item" href="#">Seni Budaya</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Profile
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Struktur Pemerintah</a>
-                  <router-link class="dropdown-item" to="/sejarah-palembang">Sejarah Palembang</router-link>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><i class="fa-solid fa-circle-exclamation"></i>Update Corona
-                  Virus</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <img src="../assets/icons/batik.png" style="width:100%; position:absolute; height:100%; top:0; z-index:2;" alt="">
-    </header>
+      </div>
+    </nav>
   </div>
 </template>
 
@@ -171,12 +153,14 @@ export default {
 };
 
 window.addEventListener("scroll", function () {
-  let header = document.querySelector("header");
+  let header = document.querySelector(".header-fixed");
   let windowPosition = window.scrollY > 0;
   header.classList.toggle("scrolling-active", windowPosition);
 });
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction();
+};
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("navbar").style.top = "0";
