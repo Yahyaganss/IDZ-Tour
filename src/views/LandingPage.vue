@@ -564,7 +564,7 @@
         "
       />
       <h3>Galeri Foto</h3>
-      <div class="row foto">
+      <div class="row">
         <div class="col-lg-6 left">
           <div
           id="carousel-1"
@@ -663,7 +663,7 @@
           <h3>#PeduliLingkungan</h3>
           <img src="../assets/images/banner1.jpeg" alt="" />
           <div class="desc-pedulilingkungan">
-            <h3>dojaodjadfa-flip-horizontal</h3>
+            <h3>dojaodjaadfa-flip-horizontal</h3>
           </div>
         </div>
       </div>
