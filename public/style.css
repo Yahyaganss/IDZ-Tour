@@ -500,7 +500,7 @@
     
         #LandingPage .galery {
             width: 100%;
-            height: 670px;
+            height: 100%;
             /* background-color: blue; */
             margin-top: 40px;
             padding: 25px;
@@ -548,8 +548,8 @@
         #LandingPage .left .carousel-control-next {
             height: 50px;
             border: 0;
-            top: 20%;
             display: none;
+            top: 20%;
             background-color: transparent;
         }
     
@@ -619,7 +619,8 @@
 
         #LandingPage .home-slider img {
             width: 100%;
-            height: 780px;
+            height: 930px;
+            object-fit: cover;
         }
 
         #LandingPage .home-slider .text-home-slider {
@@ -643,7 +644,7 @@
             transition: top 0.5s;
         }
     
-    
+    /* Landing Page */
         #ForgetPassword .ForgetPassword-card {
             width: 500px;
             background-color: rgba(0, 0, 0, 0.67);;
@@ -669,7 +670,6 @@
         #ForgetPassword button:hover {
             background-color: #cc842c;
         }
-    
     
         #Suggestion .box-suggest {
             width: 106%;
@@ -742,7 +742,7 @@
     
         /* News */
         #News .box-news {
-            width: 106%;
+            width: 100%;
             background-color: white;
             padding: 15px;
             margin: 0 0 30px 10px;
@@ -781,7 +781,100 @@
             text-decoration: none;
             color: rgb(160, 149, 149);
         }
+
+        #News .news-slider {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        #News .news-slider img {
+            width: 100%;
+            height: 925px;
+            object-fit: cover;
+        }
+
+        #News .news-slider .text-news-slider {
+            position: absolute;
+            width: 45%;
+            top: 40px;
+            margin: 60px 50px;
+        }
+
+        #News .news-slider .text-news-slider h1 {
+            font-size: 60px;
+
+            font-weight: 900;
+        }
+
+        #News .left .slide img {
+            height: 300px;
+            width: 600px;
+        }
     
+        #News .left .slide .desc-image {
+            width: 80%;
+            height: 200px;
+            margin-top: -80px;
+            position: absolute;
+            left: 10%;
+            border-radius: 20px;
+            background-color: #C4C4C4;
+            padding: 15px;
+            opacity: 70%;
+        }
+    
+        #News .left .slide .desc-image:hover {
+            width: 80%;
+            height: 200px;
+            margin-top: -110px;
+            transition: 500ms;
+            position: absolute;
+            left: 10%;
+            border-radius: 20px;
+            background-color: #888282;
+            padding: 15px;
+            opacity: 70%;
+        }
+    
+        #News .left .slide .carousel-control-prev {
+            height: 50px;
+            border: 0;
+            /* display: none; */
+            top: 20%;
+            background-color: transparent;
+        }
+    
+        #News .left .slide .carousel-control-next {
+            height: 50px;
+            border: 0;
+            top: 20%;
+            /* display: none; */
+            background-color: transparent;
+        }
+    
+        #News .left .slide .carousel-indicators img {
+            width: 130px;
+            height: 80px;
+            position: absolute;
+            left: 0;
+            top: -250px;
+            cursor: pointer;
+        }
+    
+        #News .left .slide .carousel-indicators img:hover {
+            width: 135px;
+            height: 85px;
+            transition: 500ms;
+            position: absolute;
+            left: -2px;
+            top: -252px;
+            cursor: pointer;
+        }
+    
+        #News .left .slide .card-up {
+            height: 700px;
+        }
     
         /* Food */
         #Food .food-card {            

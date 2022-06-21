@@ -105,7 +105,9 @@
                 <router-link class="dropdown-item" to="/report"
                   >Pengaduan</router-link
                 >
-                <a class="dropdown-item" href="#">Kritik & Saran</a>
+                <router-link class="dropdown-item" to="/saran"
+                  >Kritik & Saran</router-link
+                >
               </div>
             </li>
             <li class="nav-item dropdown">

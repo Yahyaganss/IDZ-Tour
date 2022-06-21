@@ -564,42 +564,48 @@
         "
       />
       <h3>Galeri Foto</h3>
-      <div class="row">
+      <div class="row foto">
         <div class="col-lg-6 left">
           <div
-            id="carouselExampleIndicators"
-            class="carousel slide"
-            data-ride="carousel"
-          >
-            <ol class="carousel-indicators">
-              <img
-                data-target="#carouselExampleIndicators"
+          id="carousel-1"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <img
+                data-target="#carousel-1"
                 data-slide-to="0"
                 class="active"
                 src="../assets/images/corona.png"
-                alt=""
+                style="margin-left: -20px"
               />
-              <img
-                data-target="#carouselExampleIndicators"
+            <img
+                data-target="#carousel-1"
                 data-slide-to="1"
                 src="../assets/images/corona.png"
-                alt=""
-                style="margin-left: 150px"
+                alt="#"
+                style="margin-left: 130px"
               />
-              <img
-                data-target="#carouselExampleIndicators"
+            <img
+                data-target="#carousel-1"
                 data-slide-to="2"
                 src="../assets/images/corona.png"
-                alt=""
-                style="margin-left: 300px"
+                alt="#"
+                style="margin-left: 280px"
               />
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active card-up">
+            <img
+                data-target="#carousel-1"
+                data-slide-to="3"
+                src="../assets/images/corona.png"
+                alt="#"
+                style="margin-left: 430px"
+              />
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active card-up">
                 <img
                   src="../assets/images/banner1.jpeg"
                   class="d-block w-100"
-                  alt="..."
                 />
                 <div class="desc-image">
                   <h3>odjajdaojd</h3>
@@ -609,7 +615,6 @@
                 <img
                   src="../assets/images/banner1.jpeg"
                   class="d-block w-100"
-                  alt="..."
                 />
                 <div class="desc-image">
                   <h3>odjajdaojd</h3>
@@ -619,38 +624,40 @@
                 <img
                   src="../assets/images/banner1.jpeg"
                   class="d-block w-100"
-                  alt="..."
                 />
                 <div class="desc-image">
                   <h3>odjajdaojd</h3>
                 </div>
               </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-target="#carouselExampleIndicators"
-              data-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-target="#carouselExampleIndicators"
-              data-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Next</span>
-            </button>
+              <div class="carousel-item card-up">
+                <img
+                  src="../assets/images/banner1.jpeg"
+                  class="d-block w-100"
+                />
+                <div class="desc-image">
+                  <h3>odjajdaojd</h3>
+                </div>
+              </div>
           </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-target="#carousel-1"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-target="#carousel-1"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </button>
+        </div>
         </div>
         <div class="col-lg-6 right">
           <h3>#PeduliLingkungan</h3>
