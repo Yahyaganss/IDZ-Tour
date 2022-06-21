@@ -663,7 +663,7 @@
           <h3>#PeduliLingkungan</h3>
           <img src="../assets/images/banner1.jpeg" alt="" />
           <div class="desc-pedulilingkungan">
-            <h3>dojaodjaadfa-flip-horizontal</h3>
+            <h3>dojaodjdaadfa-flip-horizontal</h3>
           </div>
         </div>
       </div>
