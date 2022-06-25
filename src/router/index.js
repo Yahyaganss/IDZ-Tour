@@ -11,6 +11,8 @@ import News from '../views/News'
 import Food from '../views/Food'
 import PalembangHistory from '../views/PalembangHistory'
 import testing from '../views/testing'
+import Maps from '../views/Maps'
+import TravelMenu from '../views/TravelMenu'
 Vue.use(VueRouter)
 
 const routes = [
@@ -68,6 +70,16 @@ const routes = [
     path: '/testing',
     name: 'testing',
     component: testing
+  },
+  {
+    path: '/peta',
+    name: 'Maps',
+    component: Maps
+  },
+  {
+    path: '/menu-travel',
+    name: 'TravelMenu',
+    component: TravelMenu
   },
 ]
 

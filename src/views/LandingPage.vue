@@ -105,7 +105,11 @@
                 <router-link class="dropdown-item" to="/report"
                   >Pengaduan</router-link
                 >
-                <a class="dropdown-item" href="#">Kritik & Saran</a>
+                <router-link class="dropdown-item" to="/saran"
+                  >Kritik & Saran</router-link
+                >
+                <router-link class="dropdown-item" to="/peta">Peta</router-link>
+                <router-link class="dropdown-item" to="/menu-travel">Travel</router-link>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -210,79 +214,7 @@
         <span class="sr-only">Next</span>
       </button>
     </div>
-    <center>
-      <div
-        id="carouselExampleCaptions"
-        class="carousel slide slider"
-        data-ride="carousel"
-      >
-        <ol class="carousel-indicators">
-          <li
-            data-target="#carouselExampleCaptions"
-            data-slide-to="0"
-            class="active"
-          ></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../assets/images/banner1.jpeg" class="banner" alt="#" />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Bersama Kita Bisa Hadapi</h5>
-              <h3>COVID 19</h3>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="../assets/images/banner1.jpeg"
-              class="d-block banner"
-              alt="#"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="../assets/images/banner1.jpeg"
-              class="d-block banner"
-              alt="#"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-target="#carouselExampleCaptions"
-          data-slide="prev"
-          style="background-color: transparent; border: 0; position: absolute"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-target="#carouselExampleCaptions"
-          data-slide="next"
-          style="background-color: transparent; border: 0"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </button>
-      </div>
-    </center>
-    <h3 style="margin-top: 40px; margin-left: 35px">Berita Terbaru</h3>
+    
     <div class="container-fluid" style="width: 100%; margin: auto">
       <!-- <ul id="autoWidth" class="cs-hidden" style="left: 0; margin-left: -50px">
         <li class="item-a">
@@ -466,6 +398,7 @@
           </div>
         </li>
       </ul> -->
+      <h3 style="margin-top: 40px; margin-left: 35px; color:black;">Berita Terbaru</h3>
       <div class="row">
         <div class="card">
           <router-link to="/berita">
@@ -549,8 +482,96 @@
             </div>
           </div>
         </router-link>
+        <router-link to="/berita">
+          <div class="card">
+            <img
+              src="../assets/images/corona.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <p class="date">Kamis, 03 Maret 2022</p>
+            </div>
+          </div>
+        </router-link>
       </div>
     </div>
+    <center>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide slider"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleCaptions"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../assets/images/banner1.jpeg" class="banner" alt="#" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Bersama Kita Bisa Hadapi</h5>
+              <h3>COVID 19</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../assets/images/banner1.jpeg"
+              class="d-block banner"
+              alt="#"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../assets/images/banner1.jpeg"
+              class="d-block banner"
+              alt="#"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-target="#carouselExampleCaptions"
+          data-slide="prev"
+          style="background-color: transparent; border: 0; position: absolute"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-target="#carouselExampleCaptions"
+          data-slide="next"
+          style="background-color: transparent; border: 0"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+    </center>
     <div class="galery">
       <img
         src="../assets/images/ampera-night.png"
@@ -563,46 +584,42 @@
           margin-top: -25px;
         "
       />
-      <h3>Galeri Foto</h3>
+      <h3 style="color:black;">Galeri Foto</h3>
       <div class="row">
         <div class="col-lg-6 left">
-          <div
-          id="carousel-1"
-          class="carousel slide"
-          data-ride="carousel"
-        >
-          <ol class="carousel-indicators">
-            <img
+          <div id="carousel-1" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <img
                 data-target="#carousel-1"
                 data-slide-to="0"
                 class="active"
                 src="../assets/images/corona.png"
                 style="margin-left: -20px"
               />
-            <img
+              <img
                 data-target="#carousel-1"
                 data-slide-to="1"
                 src="../assets/images/corona.png"
                 alt="#"
                 style="margin-left: 130px"
               />
-            <img
+              <img
                 data-target="#carousel-1"
                 data-slide-to="2"
                 src="../assets/images/corona.png"
                 alt="#"
                 style="margin-left: 280px"
               />
-            <img
+              <img
                 data-target="#carousel-1"
                 data-slide-to="3"
                 src="../assets/images/corona.png"
                 alt="#"
                 style="margin-left: 430px"
               />
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active card-up">
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active card-up">
                 <img
                   src="../assets/images/banner1.jpeg"
                   class="d-block w-100"
@@ -638,26 +655,32 @@
                   <h3>odjajdaojd</h3>
                 </div>
               </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-target="#carousel-1"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-target="#carousel-1"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </button>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-target="#carousel-1"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-target="#carousel-1"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </button>
-        </div>
         </div>
         <div class="col-lg-6 right">
           <h3>#PeduliLingkungan</h3>

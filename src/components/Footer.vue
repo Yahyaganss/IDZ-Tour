@@ -15,7 +15,7 @@
         <div class="line"></div>
         <div class="col-lg-3 footer-right">
           <h2>Palembang</h2>
-          <h5>06 Maret 2022</h5>
+          <h5 style="color:black;">06 Maret 2022</h5>
         </div>
         <img src="../assets/icons/batik.png" style="width:98%; position:absolute; height:100%; z-index: -1;" alt="">
       </div>

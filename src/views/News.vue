@@ -109,6 +109,12 @@
                   <router-link class="dropdown-item" to="/saran"
                     >Kritik & Saran</router-link
                   >
+                  <router-link class="dropdown-item" to="/peta"
+                    >Maps</router-link
+                  >
+                  <router-link class="dropdown-item" to="/menu-travel"
+                    >Travel</router-link
+                  >
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -443,17 +449,11 @@
 
 <script>
 import Footer from "../components/Footer.vue";
-// import Header from "../components/Header.vue";
-// import SideNews from "../components/SideNews.vue";
-import CoronaVaksinFull from "../components/CoronaVaksinFull.vue";
 
 export default {
   name: "News",
   components: {
     Footer,
-    CoronaVaksinFull,
-    // SideNews,
-    // Header,
   },
 };
 </script>

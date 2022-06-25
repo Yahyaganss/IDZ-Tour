@@ -108,6 +108,9 @@
                 <router-link class="dropdown-item" to="/saran"
                   >Kritik & Saran</router-link
                 >
+                <router-link class="dropdown-item" to="/peta"
+                  >Peta</router-link
+                >
               </div>
             </li>
             <li class="nav-item dropdown">
